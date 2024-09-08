@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ededed;
+}
+
+header {
+    background-color: #3d65d0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    max-width: 1024px;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+header .container nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 7px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main .container {
+    max-width: 1024px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .container .destaque div h1 {
+    border-bottom: 3px solid blue;
+    padding: 10px 10px 10px 0;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: #3d65d0;
+}
+
+main .container .destaque div span {
+    font-size: 1.3rem;
+}
+
+main .container .destaque {
+    display: grid;
+    grid-template-columns: 30% 55%;
+    margin-bottom: 2.4vh;
+    gap: 2.5%;
+}
+
+main .container .destaque img {
+    width: 100%;
+}
+
+section h2 {
+    max-width: 1024px;
+    color: #3d65d0;
+    text-align: center;
+    border-bottom: 3px solid blue;
+}
+
+section .produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4%;
+    margin-top: 1vh;
+    text-align: center;
+
+}
+
+section .produtos img {
+    width: 90%;
+    margin-top: 2.5vh;
+}
+figure{
+    position: relative;
+}
+figure span{
+    position: absolute;
+    top: 77%;
+    left: 22%;
+   font-size: 2em;
+   color: red;
+}
+section .produtos article{
+    background-color: #ebf0fa;
+    border-radius: 6px;
+    margin: 10px;
+  
+} 
+
+section .produtos  button{
+    padding: 8px;
+    font-size: 1em;
+    background-color: #3d65d0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    margin-top: 8px;  
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+
+    header .container {
+        font-size: 1.5em;
+    }
+
+    header .container nav ul li {
+        font-size: 0.8em;
+    }
+
+    main .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+    }
+
+    main .container .destaque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .produtos {
+        display: flex;
+        flex-direction: column;
+    }
+    section .produtos h3{
+        margin-bottom: 30px;
+    }
+    figure span{
+        position: absolute;
+        top: 76%;
+        left: 18%;
+       font-size: 3em;
+    }
+
+}
+
+@media screen and (min-width:762px) and (max-width:1023px) {
+    section .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section .produtos img {
+        padding: 30px;
+    }
+    figure span{
+        position: absolute;
+        top: 76%;
+        left: 28%;
+       font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width:428px) and (max-width:761px) {
+    figure span{
+        position: absolute;
+        top: 79%;
+        left: 26%;
+       font-size: 3em;
+    }
+}
+
